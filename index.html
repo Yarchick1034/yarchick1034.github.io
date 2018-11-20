@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>^_^</title>
+
+    <style>
+      .hello {
+        font-size: 5em;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body id="color">
+    <div class="hello">^_^</div>
+
+    <script>
+      var colorList = [
+        "aliceblue",
+        "antiquewhite",
+        "aqua",
+        "aquamarine",
+        "azure",
+        "blanchedalmond",
+        "cadetblue",
+        "chartreuse",
+        "chocolate",
+        "coral",
+        "cyan",
+        "darkblue",
+        "darkcyan",
+        "darkgoldenrod",
+        "darkgray",
+        "darkgreen",
+        "darkkhaki",
+        "darkmagenta",
+        "khaki",
+        "lightcyan",
+        "maroon",
+        "lightcyan"
+      ];
+
+      var count = 0;
+
+      setInterval(function() {
+        document.body.style.backgroundColor = colorList[count];
+
+        if (count === colorList.length - 1) {
+          count = 0;
+          return;
+        } else {
+          count++;
+        }
+      }, 100);
+    </script>
+  </body>
+</html>
